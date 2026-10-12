@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <a th:href="@{/heroes/new}">새 영웅 등록</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>이름</th>
+                <th>역할군</th>
+                <th>체력</th>
+                <th>국적</th>
+                <th>성별</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr th:each="hero : ${heroes}">
+            <td th:text="${hero.id}"></td>
+            <td th:text="${hero.name}"></td>
+            <td th:text="${hero.role}"></td>
+            <td th:text="${hero.health}"></td>
+            <td th:text="${hero.nationality}"></td>
+            <td th:text="${hero.gender}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
