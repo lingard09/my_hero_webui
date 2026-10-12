@@ -6,16 +6,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <h1>영웅 추가</h1>
     <form th:action="@{/heroes}" method="post">
-        <input name="name">
-        <input name="role">
-        <input name="health">
-        <input name="nationality">
-        <input name="gender">
+        이름 <input name="name"> <br>
+        역할군 <input name="role"> <br>
+        체력 <input name="health"> <br>
+        국적 <input name="nationality"> <br>
+        성별 <input name="gender"> <br>
 
-        <button type="submit">등 록</button>
+        <button type="submit" class="btn btn-primary">등 록</button>
     </form>
 
-    <a th:href="@{/heroes}" class="btn btn-primary">리스트 페이지로 돌아가기</a>
+    <br>
+
+    <a th:href="@{/heroes}" class="btn btn-secondary">리스트 페이지로 돌아가기</a>
 </body>
 </html>
