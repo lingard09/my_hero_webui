@@ -11,10 +11,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/heroes")
-public class HeroRestController {
+public class HeroWebController {
     private final HeroService heroService;
 
-    public HeroRestController(HeroService heroService) {
+    public HeroWebController(HeroService heroService) {
         this.heroService = heroService;
     }
 
